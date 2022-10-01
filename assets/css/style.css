@@ -1,0 +1,91 @@
+Global .alert-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+section button {
+  border-radius: 8px;
+  margin: 10px;
+  width: 22vw;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(183, 183, 183);
+}
+#cityinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24vw;
+  height: 6vh;
+}
+
+#Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24vw;
+  font-weight: bold;
+}
+#title {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.card-subtitle {
+  margin: 20px;
+}
+
+.bord {
+  margin: 20px;
+  border: solid 2px black;
+}
+
+.bordwork {
+  margin: 20px;
+}
+.card-title {
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+.card {
+  color: white;
+  background-color: rgb(57, 57, 74);
+  border-radius: 10px;
+}
+.Forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#line {
+  border: solid 1px black;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(96, 62, 180);
+  color: rgb(172, 243, 227);
+}
+
+.bg-light {
+  border: solid 1px black;
+}
+
+#five-day {
+  margin: 20px;
+}
