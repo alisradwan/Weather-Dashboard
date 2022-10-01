@@ -5,6 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="jumbotron">
+      <div>
+        <h1 class="display-3">
+          Weather Dashboard
+          <i class="fa-solid fa-cloud"></i>
+          <i class="fa-sharp fa-solid fa-bolt"></i>
+        </h1>
+      </div>
+    </header>
+
+    <div class="container"></div>
+    <div class="row">
+      <div class="col-md-3 bg-light container" id="searchbar">
+        <h2 id="title">Search for a city:</h2>
+        <br />
+        <input type="text" placeholder="City name" id="cityinput" />
+        <br />
+        <button onclick="Search()" type="button" class="btn btn-primary" id="Search">Search</button>
+        <br/>
+        <div id="line"></div>
+        <br />
+        <div class=" search-history ">
+          <ul class="list-group">
+              <section>
+                  <button id="search0"></button>
+                  <button id="search1"></button>
+                  <button id="search2"></button>
+                  <button id="search3"></button>
+                  <button id="search4"></button>
+              </section>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-8 bg-light container" id="main">
+        <div class="bord">
+
+        <div class="bordwork">
+          <h2 id="namecity">City name :</h2>
+                            <p id="currentdate"></p>
+                            <img class="weathericon">
+                            <h6 class="card-subtitle mb-2 "> Temp : <span id="tempcity"></span></h6>
+                             <h6 class="card-subtitle mb-2 "> Wind : <span id="windspeed"></span>
+                            <h6 class="card-subtitle mb-2 ">Humidity : <span id="humcity"></span></h6>
+        </div>
+        </div>
+        <br>
+        <div id="five-day">
+          <h5 class="Forecast">5-Days Forecast:</h5>
+          <div class="row">
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                      
+                      <div class="card-title" id="day0">Date</div>
+                      <img class="icons" id="icon0">
+                      <p id="Tempday0">Temp:</p>
+                      <p id="windday0">Wind:</p>
+                      <p id="humday0">Humidity:</p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                    
+                      <div class="card-title" id="day1">Date</div>
+                      <img class="icons" id="icon1">
+                      <p id="Tempday1">Temp:</p>
+                      <p id="windday1">Wind:</p>
+                      <p id="humday1">Humidity:</p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                      <div class="card-title" id="day2">Date</div>
+                      <img class="icons" id="icon2">
+                      <p id="Tempday2">Temp:</p>
+                      <p id="windday2">Wind:</p>
+                      <p id="humday2">Humidity:</p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                      <div class="card-title" id="day3">Date</div>
+                      <img class="icons" id="icon3">
+                      <p id="Tempday3">Temp:</p>
+                      <p id="windday3">Wind:</p>
+                      <p id="humday3">Humidity:</p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                      <div class="card-title" id="day4">Date</div>
+                      <img class="icons" id="icon4">
+                      <p id="Tempday4">Temp:</p>
+                      <p id="windday4">Wind:</p>
+                      <p id="humday4">Humidity:</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- main jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery UI -->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3715005686.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my script.js -->
+    <script src="./assets/script/script.js"></script>
+  </body>
 </html>
