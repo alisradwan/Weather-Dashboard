@@ -31,7 +31,7 @@
         <br />
         <input type="text" placeholder="City name" id="cityinput" />
         <br />
-        <button onclick="Search()" type="button" class="btn btn-primary" id="Search">Search</button>
+        <button onclick="GetInfo()" type="button" class="btn btn-primary buttonsearch" id="buttonsearchh">Search</button>
         <br/>
         <div id="line"></div>
         <br />
@@ -53,7 +53,7 @@
         <div class="bordwork">
           <h2 id="namecity">City name :</h2>
                             <p id="currentdate"></p>
-                            <img class="weathericon">
+                            <img class="weathericon iconSize">
                             <h6 class="card-subtitle mb-2 "> Temp : <span id="tempcity"></span></h6>
                              <h6 class="card-subtitle mb-2 "> Wind : <span id="windspeed"></span>
                             <h6 class="card-subtitle mb-2 ">Humidity : <span id="humcity"></span></h6>
@@ -66,16 +66,6 @@
               <div class="col-sm">
                   <div class="card  five-cards">
                       
-                      <div class="card-title" id="day0">Date</div>
-                      <img class="icons" id="icon0">
-                      <p id="Tempday0">Temp:</p>
-                      <p id="windday0">Wind:</p>
-                      <p id="humday0">Humidity:</p>
-                  </div>
-              </div>
-              <div class="col-sm">
-                  <div class="card  five-cards">
-                    
                       <div class="card-title" id="day1">Date</div>
                       <img class="icons" id="icon1">
                       <p id="Tempday1">Temp:</p>
@@ -85,6 +75,7 @@
               </div>
               <div class="col-sm">
                   <div class="card  five-cards">
+                    
                       <div class="card-title" id="day2">Date</div>
                       <img class="icons" id="icon2">
                       <p id="Tempday2">Temp:</p>
@@ -108,6 +99,15 @@
                       <p id="Tempday4">Temp:</p>
                       <p id="windday4">Wind:</p>
                       <p id="humday4">Humidity:</p>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card  five-cards">
+                      <div class="card-title" id="day5">Date</div>
+                      <img class="icons" id="icon5">
+                      <p id="Tempday5">Temp:</p>
+                      <p id="windday5">Wind:</p>
+                      <p id="humday5">Humidity:</p>
                   </div>
               </div>
           </div>
