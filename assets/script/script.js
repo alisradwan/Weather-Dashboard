@@ -1,3 +1,15 @@
+let $cityDate = moment().format("l");
+$("#currentdate").text($cityDate);
+
+let $clicked = $("#buttonsearchh");
+$clicked.on("click", GetInfo);
+$clicked.on("click", searchSave);
+$("input").keyup(function () {
+  if (event.key === "Enter") {
+    $clicked.click();
+  }
+});
+
 function GetInfo() {
   var newName = document.getElementById("cityinput");
   var city = document.getElementById("namecity");
@@ -104,5 +116,30 @@ function GetInfo() {
     });
 }
 
-let $cityDate = moment().format("l");
-$("#currentdate").text($cityDate);
+let oldcities = [];
+
+function searchSave() {
+  var newName = document.getElementById("cityinput");
+  let newcity = newName.value;
+  oldcities.push(newcity);
+  oldcities = [...new Set(oldcities)];
+  // put in localStorage
+  localStorage.setItem("cities", JSON.stringify(oldcities));
+  // display in HTML
+  for (i = 0; i <= oldcities.length - 1; i++) {
+    // iterate through, displaying in HTML
+    $("#search" + i).text(oldcities[i]);
+    $("#search" + i).addClass("past");
+  }
+}
+
+$("section").on("click", ".past", savedsearch);
+
+function savedsearch() {
+  // var for text of pastcityname
+  let $oldCity = $(this).text();
+  // put it in the input field
+  $("#cityinput").val($oldCity);
+  // this triggers the original click listener, above citysearch()
+  $clicked.trigger("click");
+}
