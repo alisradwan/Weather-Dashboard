@@ -14,9 +14,9 @@ I learned many important fundementals of javascript creating this project. I lea
 
 ## Submission
 
-- GitHub Repo URL:
-- Deplyed URL:
+- GitHub Repo URL: https://github.com/alisradwan/Weather-Dashboard
+- Deplyed URL: https://alisradwan.github.io/Weather-Dashboard/
 
 # Mock-up
 
-![Screenshot of the Weather-Dashboard](./)
+![Screenshot of the Weather-Dashboard](./assets/image/Screen%20Shot%202022-10-05%20at%206.21.40%20PM.png)
